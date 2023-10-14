@@ -1,0 +1,42 @@
+*, *::before , *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    min-height:100vh;
+}
+
+body{
+    min-height: 100vh;
+    background-color:#F5F6FA;
+}
+
+.container{
+   width:min(90%, 1140px);
+   margin: 3rem auto;
+}
+
+.parent-comment-container{
+   display: flex;
+    background-color: white;
+    padding:30px;
+    gap: 2rem;
+}
+
+.comment-header{
+    display:flex
+}
+.counter{
+    background-color:#6573aa ;
+    width: 20px;
+    height:50px;
+}
+.avatar-name-time{
+    display: flex;
+}
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Interactive comments section</title> 
+</head>
+<body>
+  <div class="container">
+    <div class="parent-comment-container">
+      <div class="counter"></div>
+     <div class="parent-comment-div">
+      <!-- comment header -->
+       <div class="comment-header">
+        <!-- avatar, name, time of comment -->
+        <div class="avatar-name-time">
+        <div class="avatar">
+          <img src="./images/avatars/image-amyrobson.png" alt="avatar">
+        </div>
+        <div class="commenter-name"><b>amyrobson</b></div>
+        <div class="comment-time">1 month ago</div>
+      </div>
+      <!-- avatar, name, time stops here -->
+      
+        <!-- display this section flex so that reply icon and text be beside eachother -->
+        <div class="comment-reply"> 
+          <div><img src="./images/icon-reply.svg" class="reply-icon"></div>
+          <div class="reply-text">Reply</div>
+        </div>
+        <!-- reply and icon end here -->
+     </div>
+     <div class="comment-body-text">
+      <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+    </div>
+    </div>
+  </div>
+</body>
+
+  
+ <script src="./app.js"></script>
+  </div>
+</body>
+</html>
