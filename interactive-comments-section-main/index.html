@@ -64,7 +64,99 @@
           </div>
         </div>
       </div>
+      <!-- Amy robson ends here -->
+      <!--send reply field(will be indented) -->
+      <div class="send-reply-container">
 
+        <!-- sent reply starts here -->
+        <div class="sent-comment-container">
+          <div class="counter">
+            <div class="plus">
+              <img src="./images/icon-plus.svg" class="plus" />
+            </div>
+            <div class="count">5</div>
+            <div class="minus">
+              <img src="./images/icon-minus.svg" class="minus" />
+            </div>
+          </div>
+          <div class="parent-comment-div">
+            <!-- comment header -->
+            <div class="comment-header">
+              <!-- avatar, name, time of comment -->
+              <div class="avatar-name-time">
+                <div>
+                  <img
+                    src="./images/avatars/image-juliusomo.webp"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                </div>
+                <div class="commenter-name"><b>juliusomo</b></div>
+                <div><button class="you">you</button></div>
+                <div class="comment-time">1 week ago</div>
+              </div>
+              <!-- avatar, name, time stops here -->
+
+              <!-- display this section flex so that reply icon and text be beside eachother -->
+              <div class="delete-edit-container">
+                <div class="delete-container">
+                <div>
+                  <img src="./images/icon-delete.svg" class="delete-icon" />
+                </div>
+                <div class="delete-text">Delete</div>
+              </div>
+              <div class="edit-container">
+                <div>
+                  <img src="./images/icon-edit.svg" class="edit-icon" />
+                </div>
+                <div class="edit-text">Edit</div>
+              </div>
+              </div>
+              <!-- reply text and icon end here -->
+            </div>
+            <div class="comment-body-text">
+              <p>
+                <span class="username">@amyrobson</span> If you're still new,
+                I'd recommend focusing on the fundamentals of HTML, CSS, and JS
+                before considering React. It's very tempting to jump ahead but
+                lay a solid foundation first.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- sent reply ends here -->
+        <div class="child-comment-container">
+          <div class="input-comment-div">
+            <div>
+              <img
+                src="./images/avatars/image-juliusomo.png"
+                class="main-comment-input-field-avatar"
+              />
+            </div>
+            <div>
+              <textarea
+                cols="50"
+                rows="4"
+                class="send-comment-input-field"
+                placeholder="Add a comment..."
+              ></textarea>
+            </div>
+            <div><button>Send</button></div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal-wrap invisible">
+          <div class="modal-container">
+            <h3>Delete comment</h3>
+            <p class="modal-prompt-text">Are you sure you want to delete this comment? This will remove the comment and can't be undone</p>
+            <button class="yes">YES,DELETE</button>
+            <button class="no">NO,CANCEL</button>
+          </div>
+        </div>
+        <!-- modal ends here -->
+        
+      </div>
+      <!-- send reply ends here -->
       <!-- Maxblagun -->
       <div class="parent-comment-container">
         <div class="counter">
@@ -112,7 +204,8 @@
           </div>
         </div>
       </div>
-      <!-- reply(will be indented) -->
+      <!-- Maxblagun ends here -->
+      <!-- ramsesmiron reply(will be indented) -->
       <div class="reply-container">
         <div class="child-comment-container">
           <div class="counter">
@@ -160,20 +253,32 @@
             </div>
           </div>
         </div>
+        
       </div>
-      <!-- the whole reply ends here -->
+      <!-- ramsesmiron reply ends here -->
 
-      <!-- textarea start here -->
+      <!-- main comment textarea start here -->
       <div class="input-comment-container">
-       <div class="input-comment-div">
-         <div><img src="./images/avatars/image-juliusomo.png" class="main-comment-input-field-avatar"></div>
-         <div><textarea cols="90" rows="7" class="main-comment-input-field"></textarea></div>
-         <div><button>Send</button></div>
-       </div>
- 
+        <div class="input-comment-div">
+          <div>
+            <img
+              src="./images/avatars/image-juliusomo.png"
+              class="main-comment-input-field-avatar"
+            />
+          </div>
+          <div>
+            <textarea
+              cols="50"
+              rows="4"
+              class="main-comment-input-field"
+              placeholder="Add a comment..."
+            ></textarea>
+          </div>
+          <div><button>Send</button></div>
+        </div>
       </div>
-      <!-- text area end here -->
-      
+      <!-- main comment text area end here -->
+
       <script src="./app.js"></script>
     </div>
   </body>

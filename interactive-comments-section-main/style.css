@@ -18,7 +18,8 @@ body{
 .container{
    width:min(90%, 1140px);
    margin:3rem  auto;
-   width: 900px;
+   width: 800px;
+
 }
 
 .parent-comment-container{
@@ -28,6 +29,7 @@ body{
     gap: 2rem;
     border-radius:10px;
     margin-bottom: 15px;
+    width:800px;
 
 }
 
@@ -88,10 +90,12 @@ body{
     color:#5357B6;
 }
 .reply-container{
-    width: 850px;
+    width: 750px;
     border-left:2px solid #C3C4EF;
     float:right;
     min-height:100;
+    
+   
     
 }
 
@@ -102,12 +106,12 @@ body{
     gap: 2rem;
     border-radius:10px;
     margin-bottom:15px;
-    width:800px;
-    float:right
+    width:700px;
+    float:right;
    
 }
 
-/* input comment area */
+/* main input comment area (below the page)*/
 .input-comment-container{
     display: flex;
     background-color: white;
@@ -115,12 +119,13 @@ body{
     gap: 2rem;
     border-radius:10px;
     margin-bottom: 15px;
+    height:168px;
+    width:800px;
 }
 
 .input-comment-div{
     display:flex;
     justify-content: space-between;
-    border: 1px solid red;
     margin:auto;
     width:100%;
 }
@@ -129,8 +134,86 @@ body{
     width:50px;
     height:50px;
 }
+button{
+    padding:10px 20px;
+    font-size:18px;
+    font-weight:500;
+    background-color: #5357B6;
+    border:none;
+    color:white;
+    border-radius:10px;
+}
 
+.main-comment-input-field{
+    border-color:#EAECF1 ;
+    resize: none;
+    font-size:16px;
+    padding:10px;
+}
 
+/* send reply comment area */
+.send-reply-container{
+    width: 750px;
+    border-left:2px solid #C3C4EF;
+    float:right;
+    min-height:100;
+}
+.send-comment-input-field{
+    border-color:#EAECF1 ;
+    resize: none;
+    font-size:16px;
+    padding:10px;
+}
 
+/* sent comment */
+.sent-comment-container{
+    display:flex;
+    background-color: white;
+    padding:30px;
+    gap: 2rem;
+    border-radius:10px;
+    margin-bottom:15px;
+    width:700px;
+    float:right;
+}
 
+.delete-edit-container{
+    display:flex;
+    gap: 1rem;
+}
+.delete-container,.edit-container{
+    display:flex;
+    gap:.4rem;
+}
+.delete-text{
+    color:#ED6368;
+    font-weight:700;
+}
+.edit-text{
+    color:#5357B6;
+    font-weight:700;
+}
 
+.you{
+    padding:3px 8px;
+    font-size:14px;
+    font-weight:400;
+    background-color: #5357B6;
+    border:none;
+    color:white;
+    margin-top:10px;
+    border-radius:2px;
+}
+
+/* modal */
+.modal-container{
+    background-color: white;
+    border:1px solid red;
+    position:fixed;
+    margin:auto;
+    width:320px;
+    height:210px;
+}
+.modal-prompt-text{
+   
+}
