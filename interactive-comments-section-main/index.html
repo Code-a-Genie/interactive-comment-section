@@ -1,47 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Interactive comments section</title> 
-</head>
-<body>
-  <div class="container">
-    <div class="parent-comment-container">
-      <div class="counter"></div>
-     <div class="parent-comment-div">
-      <!-- comment header -->
-       <div class="comment-header">
-        <!-- avatar, name, time of comment -->
-        <div class="avatar-name-time">
-        <div class="avatar">
-          <img src="./images/avatars/image-amyrobson.png" alt="avatar">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Interactive comments section</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Amy robson(the first ever comment) -->
+      <div class="parent-comment-container">
+        <div class="counter">
+          <div class="plus">
+            <img src="./images/icon-plus.svg" class="plus" />
+          </div>
+          <div class="count">10</div>
+          <div class="minus">
+            <img src="./images/icon-minus.svg" class="minus" />
+          </div>
         </div>
-        <div class="commenter-name"><b>amyrobson</b></div>
-        <div class="comment-time">1 month ago</div>
+        <div class="parent-comment-div">
+          <!-- comment header -->
+          <div class="comment-header">
+            <!-- avatar, name, time of comment -->
+            <div class="avatar-name-time">
+              <div>
+                <img
+                  src="./images/avatars/image-amyrobson.png"
+                  alt="avatar"
+                  class="avatar"
+                />
+              </div>
+              <div class="commenter-name"><b>amyrobson</b></div>
+              <div class="comment-time">1 month ago</div>
+            </div>
+            <!-- avatar, name, time stops here -->
+
+            <!-- display this section flex so that reply icon and text be beside eachother -->
+            <div class="comment-reply">
+              <div>
+                <img src="./images/icon-reply.svg" class="reply-icon" />
+              </div>
+              <div class="reply-text">Reply</div>
+            </div>
+            <!-- reply and icon end here -->
+          </div>
+          <div class="comment-body-text">
+            <p>
+              Impressive! Though it seems the drag feature could be improved.
+              But overall it looks incredible. You've nailed the design and the
+              responsiveness at various breakpoints works really well.
+            </p>
+          </div>
+        </div>
       </div>
-      <!-- avatar, name, time stops here -->
-      
-        <!-- display this section flex so that reply icon and text be beside eachother -->
-        <div class="comment-reply"> 
-          <div><img src="./images/icon-reply.svg" class="reply-icon"></div>
-          <div class="reply-text">Reply</div>
-        </div>
-        <!-- reply and icon end here -->
-     </div>
-     <div class="comment-body-text">
-      <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
-    </div>
-    </div>
-  </div>
-</body>
 
-  
- <script src="./app.js"></script>
-  </div>
-</body>
+      <!-- Maxblagun -->
+      <div class="parent-comment-container">
+        <div class="counter">
+          <div class="plus">
+            <img src="./images/icon-plus.svg" class="plus" />
+          </div>
+          <div class="count">10</div>
+          <div class="minus">
+            <img src="./images/icon-minus.svg" class="minus" />
+          </div>
+        </div>
+        <div class="parent-comment-div">
+          <!-- comment header -->
+          <div class="comment-header">
+            <!-- avatar, name, time of comment -->
+            <div class="avatar-name-time">
+              <div>
+                <img
+                  src="./images/avatars/image-maxblagun.png"
+                  alt="avatar"
+                  class="avatar"
+                />
+              </div>
+              <div class="commenter-name"><b>maxblagun</b></div>
+              <div class="comment-time">2 weeks ago</div>
+            </div>
+            <!-- avatar, name, time stops here -->
+
+            <!-- display this section flex so that reply icon and text be beside eachother -->
+            <div class="comment-reply">
+              <div>
+                <img src="./images/icon-reply.svg" class="reply-icon" />
+              </div>
+              <div class="reply-text">Reply</div>
+            </div>
+            <!-- reply text and icon end here -->
+          </div>
+          <div class="comment-body-text">
+            <p>
+              Woah, your project looks awesome! How long have you been coding
+              for? I'm still new, but think I want to dive into React as well
+              soon. Perhaps you can give me an insight on where I can learn
+              React? Thanks!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- reply(will be indented) -->
+      <div class="reply-container">
+        <div class="child-comment-container">
+          <div class="counter">
+            <div class="plus">
+              <img src="./images/icon-plus.svg" class="plus" />
+            </div>
+            <div class="count">5</div>
+            <div class="minus">
+              <img src="./images/icon-minus.svg" class="minus" />
+            </div>
+          </div>
+          <div class="parent-comment-div">
+            <!-- comment header -->
+            <div class="comment-header">
+              <!-- avatar, name, time of comment -->
+              <div class="avatar-name-time">
+                <div>
+                  <img
+                    src="./images/avatars/image-ramsesmiron.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                </div>
+                <div class="commenter-name"><b>ramsesmiron</b></div>
+                <div class="comment-time">1 week ago</div>
+              </div>
+              <!-- avatar, name, time stops here -->
+
+              <!-- display this section flex so that reply icon and text be beside eachother -->
+              <div class="comment-reply">
+                <div>
+                  <img src="./images/icon-reply.svg" class="reply-icon" />
+                </div>
+                <div class="reply-text">Reply</div>
+              </div>
+              <!-- reply text and icon end here -->
+            </div>
+            <div class="comment-body-text">
+              <p>
+                <span class="username">@maxblagun</span> If you're still new,
+                I'd recommend focusing on the fundamentals of HTML, CSS, and JS
+                before considering React. It's very tempting to jump ahead but
+                lay a solid foundation first.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- the whole reply ends here -->
+
+      <!-- textarea start here -->
+      <div class="input-comment-container">
+       <div class="input-comment-div">
+         <div><img src="./images/avatars/image-juliusomo.png" class="main-comment-input-field-avatar"></div>
+         <div><textarea cols="90" rows="7" class="main-comment-input-field"></textarea></div>
+         <div><button>Send</button></div>
+       </div>
+ 
+      </div>
+      <!-- text area end here -->
+      
+      <script src="./app.js"></script>
+    </div>
+  </body>
 </html>
